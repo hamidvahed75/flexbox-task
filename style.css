@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ANCHOR Customer propertys*/
+:root {
+  --clr-background: #eaedee;
+  --clr-background-content: white;
+  --clr-acc-black: #000;
+  --clr-acc-lila: #9b59b6;
+  --clr-acc-blau: #206694;
+  --clr-acc-darkcyan: #008b8b;
+  --clr-acc-darkgreen: #006400;
+  --clr-acc-darkgrey: #bebbbbc7;
+
+  --s-base: 1rem;
+  --s-sm: calc(var(--s-base) / 2);
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--clr-acc-blau);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-block: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: var(--s-base);
+
+  padding-top: var(--s-base);
+}
+
+/* ANCHOR Container task*/
+.container-task {
+  max-width: 450px;
+  background-color: var(--clr-acc-darkcyan);
+  background-image: linear-gradient(
+    180deg,
+    var(--clr-acc-black) 20%,
+    var(--clr-background) 20%
+  );
+  padding: 1rem;
+  border: 1px solid black transparent;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.profil-img {
+  width: 10rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid white;
+
+  position: relative;
+}
+
+.status-indicator {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 10px solid white;
+
+  position: absolute;
+  top: 11rem;
+  left: 7rem;
+}
+
+.online {
+  background-color: green;
+}
+/*
+.offline {
+  background-color: red;
+}
+*/
+
+/* ANCHOR Container*/
+.container {
+  max-width: 400px;
+  border: 2px solid black;
+  padding: var(--s-sm);
+}
+
+/* ANCHOR Container content*/
+.content-container {
+  background-color: var(--clr-background-content);
+
+  padding: var(--s-sm);
+  border-radius: var(--s-sm);
+}
+
+.name {
+  border-bottom: 2px solid var(--clr-background);
+  padding-bottom: var(--s-base);
+}
+
+.info-dates {
+  list-style-type: none;
+
+  display: flex;
+  gap: var(--s-base);
+
+  padding-left: 0;
+  margin-block: 0;
+}
+
+.info-dates li {
+  display: flex;
+  align-items: center;
+  gap: var(--s-sm);
+}
+
+.icon {
+  width: var(--s-base);
+}
+
+.cbe-logo {
+  fill: var(--clr-acc-lila);
+}
+
+.info-tasks {
+  list-style-type: none;
+  margin-block: 0;
+  padding-left: 0;
+  padding-top: var(--s-base);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-sm);
+}
+
+.info-team li,
+.info-trainers li,
+.info-teaching li,
+.info-assesment li,
+.info-plus {
+  background-color: var(--clr-background);
+  padding: var(--s-sm);
+  border-radius: var(--s-sm);
+}
+
+.lila-logo {
+  fill: var(--clr-acc-lila);
+}
+
+.darkcyan-logo {
+  fill: var(--clr-acc-darkcyan);
+}
+
+.darkgreen-logo {
+  fill: var(--clr-acc-darkcyan);
+}
+
+.lightgrey-logo {
+  fill: var(--clr-acc-darkgrey);
+}
+
+.plus-logo {
+  fill: var(--clr-acc-black);
+}
+
+.notiz-heading {
+  padding-bottom: var(--s-sm);
+}
+
+.notiz-subheading {
+  padding-left: var(--s-sm);
+  padding-bottom: var(--s-base);
+}
